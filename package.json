@@ -1,0 +1,48 @@
+{
+  "name": "@terragon/content-creator-suite",
+  "version": "1.0.0",
+  "description": "MCP tool chain for viral content creation: Ideas → Scripts → Growth ($79-$299/mo)",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "viral-idea-generator": "dist/idea-generator/server.js",
+    "script-to-video": "dist/script-to-video/server.js",
+    "growth-optimizer": "dist/growth-optimizer/server.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev:ideas": "tsx src/idea-generator/server.ts",
+    "dev:video": "tsx src/script-to-video/server.ts",
+    "dev:growth": "tsx src/growth-optimizer/server.ts",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "@google/generative-ai": "^0.21.0",
+    "@huggingface/inference": "^2.8.1",
+    "axios": "^1.7.9",
+    "cheerio": "^1.0.0",
+    "zod": "^3.23.8",
+    "winston": "^3.17.0",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2",
+    "tsx": "^4.19.2",
+    "jest": "^29.7.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "keywords": [
+    "mcp",
+    "content-creator",
+    "youtube",
+    "tiktok",
+    "viral-content",
+    "ai-video"
+  ],
+  "author": "Terragon Labs",
+  "license": "MIT"
+}
