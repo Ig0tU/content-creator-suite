@@ -2,3 +2,4 @@
 # Sensitive files
 *.env.backup
 .env
+.vercel
